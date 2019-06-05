@@ -1,4 +1,4 @@
-# ICPC-Code-Template-in-Latex
+﻿# ICPC-Code-Template-in-Latex
 
 
 创建一个Latex版本的 ACM-ICPC 模板。
@@ -35,10 +35,10 @@ ACM-ICPC模版库、g++环境、Latex发行版软件
 
 #### Linux：
 
-直接make就可以了（如果没有安装latex，需要自行安装一下texlive-full）
+直接make就可以了（如果没有安装Latex，需要自行安装一下texlive-full）
 
 #### Windows：
 
 **因为需要支持中文，故需要将Windows系统编码改为utf-8！！**
 
-只有编译运行`main.cpp`，之后就会生成一份`template.tex`文件，最后只需要用Latex使用`Xelatex`编译生成pdf文件即可。
+之后编译运行`main.cpp`，之后就会生成一份`template.tex`文件，最后只需要用Latex使用`XeLatex`编译生成pdf文件即可。
