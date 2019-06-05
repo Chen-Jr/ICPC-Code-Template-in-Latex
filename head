@@ -1,0 +1,84 @@
+\documentclass[10pt,a4paper]{article}
+%\usepackage{zh_CN-Adobefonts_external}
+\usepackage{xeCJK}
+\usepackage{amsmath, amsthm}
+\usepackage{listings,xcolor}
+\usepackage{geometry} % 设置页边距
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage[colorlinks]{hyperref}
+\usepackage{setspace}
+\usepackage{fancyhdr} % 自定义页眉页脚
+
+
+\setsansfont{Consolas} % 设置英文字体
+\setmonofont[Mapping={}]{Consolas} % 英文引号之类的正常显示，相当于设置英文字体
+
+\linespread{1.2}
+
+\title{Template For ICPC}
+\author{ChenJr @ GDUT}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\pagestyle{fancy}
+
+\lhead{\CJKfamily{kai} GuangDong University of Technology} %以下分别为左中右的页眉和页脚
+\chead{}
+
+\rhead{\CJKfamily{kai} 第 \thepage 页}
+\lfoot{} 
+\cfoot{\thepage}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\footrulewidth}{0.4pt}
+%\geometry{left=2.5cm,right=3cm,top=2.5cm,bottom=2.5cm} % 页边距
+\geometry{left=3.18cm,right=3.18cm,top=2.54cm,bottom=2.54cm}
+\setlength{\columnsep}{30pt}
+
+\makeatletter
+
+\makeatother
+
+
+
+\lstset{
+    language    = c++,
+    numbers     = left,
+    numberstyle={                               % 设置行号格式
+        \small
+        \color{black}
+        \fontspec{Consolas}
+    },
+	commentstyle = \color[RGB]{0,128,0}\bfseries, %代码注释的颜色
+	keywordstyle={                              % 设置关键字格式
+        \color[RGB]{40,40,255}
+        \fontspec{Consolas Bold}
+        \bfseries
+    },
+	stringstyle={                               % 设置字符串格式
+        \color[RGB]{128,0,0}
+        \fontspec{Consolas}
+        \bfseries
+    },
+	basicstyle={                                % 设置代码格式
+        \fontspec{Consolas}
+        \small\ttfamily
+    },
+	emphstyle=\color[RGB]{112,64,160},          % 设置强调字格式
+    breaklines=true,                            % 设置自动换行
+    tabsize     = 4,
+    frame       = single,%主题
+    columns     = fullflexible,
+    rulesepcolor = \color{red!20!green!20!blue!20}, %设置边框的颜色
+    showstringspaces = false, %不显示代码字符串中间的空格标记
+	escapeinside={\%*}{*)},
+}
+
+\begin{document}
+\title{ICPC Templates For Grooming}
+\author {ChenJr}
+\maketitle
+\tableofcontents
+\newpage
